@@ -1,0 +1,29 @@
+.inputboxes{
+  padding: 20px 20px;
+  margin-bottom: 35px;
+}
+.inputboxes{
+  display: flex;
+  justify-content: flex-start;
+}
+.inputbox{
+  flex-basis: 35%;
+}
+.inputboxes button{
+  margin-left: auto;
+  background-color:teal;
+  border: none;
+  border-radius: 10px;
+  font-size: 25px;
+  padding: 5px 5px;
+}
+
+.inputbox{
+  display: flex;
+  
+}
+.inputbox>.text{
+  padding: 5px 10px;
+  font-size: 20px; 
+  font-weight: bold;
+}

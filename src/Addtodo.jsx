@@ -7,7 +7,9 @@ function TextInput({ description, value, setValue }) {
   }
   return (
     <div className='inputbox'>
-      {description}
+      <div className='text'>
+        {description} 
+      </div>
       <input value={value} className='titleinput' onChange={(event) => setState(setValue, event.target.value)}></input>
     </div>
   )
