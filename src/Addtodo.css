@@ -1,6 +1,7 @@
 .inputboxes{
   padding: 20px 20px;
   margin-bottom: 35px;
+  background-color:wheat;
 }
 .inputboxes{
   display: flex;
@@ -14,7 +15,7 @@
 }
 .inputboxes button{
   margin-left: auto;
-  background-color:darkgreen;
+  background-color:darkolivegreen;
   color:honeydew;
   border: none;
   border-radius: 10px;
@@ -52,7 +53,7 @@
   flex-basis:25%;
   padding: 30px 20px;
   margin: 20px 20px;
-  background-color:olivedrab;
+  background-color:lightcoral;
   border-radius: 5px;
 }
 .card>.todo-title{

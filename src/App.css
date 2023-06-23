@@ -1,5 +1,8 @@
 .App {
   margin: 5px 5px;
-  background-color:wheat;
-  border-radius: 5px;
+  background-color:blanchedalmond;
+  border-radius: 10px;
+  max-width: 1200px;
+  min-width: 800px;
+  margin:auto;
 }
