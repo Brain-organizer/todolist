@@ -1,0 +1,14 @@
+.title-bar{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.title-bar{
+  margin: 5px 5px;
+  padding: 5px 5px;
+}
+
+.title, .library{
+  flex-basis: auto;
+}
