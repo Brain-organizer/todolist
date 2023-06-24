@@ -1,16 +1,14 @@
 import { useState } from 'react'
 import './Addtodo.css'
+import { v4 as uuidv4 } from 'uuid'
 
 function TextInput({ description, value, setValue }) {
-  const setState = function (setFunc, toWhat) {
-    setFunc(toWhat);
-  }
   return (
     <div className='inputbox'>
       <div className='text'>
         {description} 
       </div>
-      <input value={value} className='titleinput' onChange={(event) => setState(setValue, event.target.value)}></input>
+      <input value={value} className='titleinput' onChange={(event) => setValue(event.target.value)}></input>
     </div>
   )
 }
@@ -22,7 +20,7 @@ function Addtodo() {
 
 
   const addtolist = function () {
-    const id = todolist.length;
+    const id = uuidv4();
     const is_done = false;
     setList([...todolist, { id, title, content, is_done }]);
     setTitle('');
@@ -47,7 +45,7 @@ function Addtodo() {
           <div className="box-title">Working.. 🔥</div>
           <div className="cards">
             {todolist.filter((item) => item['is_done'] === false).map((item) => (
-              <div className="card" id={item.id}>
+              <div className="card" key={item.id}>
                 <div className="todo-title">
                   {item.title}
                 </div>
@@ -67,7 +65,7 @@ function Addtodo() {
           <div className="box-title">Done..! 🎉</div>
           <div className="cards">
             {todolist.filter((item) => item['is_done'] === true).map((item) => (
-              <div className="card" id={item.id}>
+              <div className="card" key={item.id}>
                 <div className="todo-title">
                   {item.title}
                 </div>
