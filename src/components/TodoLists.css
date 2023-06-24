@@ -1,0 +1,45 @@
+.card-box{
+  padding:20px 0px;
+  margin: 20px 0px;
+}
+.cards{
+  display:flex;
+  flex-flow: row wrap;
+}
+.box-title{
+  font-size: 40px;
+  margin: 10px 10px;
+  padding: 0px 10px;
+
+}
+.card{
+  flex-basis:25%;
+  padding: 30px 20px;
+  margin: 20px 20px;
+  background-color:rgb(85, 180, 129);
+  border-radius: 5px;
+}
+.card>.todo-title{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 10px;
+}
+.card>.todo-content{
+  font-size: 20px;
+  padding: 10px 10px;
+}
+.buttons{
+  display:flex;
+  padding: 3px 10px;
+  margin-top: 10px;
+}
+.buttons>button{
+  padding: 7px 7px;
+  font-size: 20px;
+  border:none;
+  background-color: honeydew;
+  border-radius: 6px;
+}
+.buttons>.complete-toggle{
+  margin:0px 10px;
+}
