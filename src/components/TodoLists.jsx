@@ -1,5 +1,5 @@
 import React from 'react'
-import './todoLists.css'
+import './TodoLists.css'
 
 function TodoLists({title, type,todolist,setList}) {
   const rmfromlist = function (id) {
