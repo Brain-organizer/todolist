@@ -33,4 +33,4 @@ function TodoLists({title, type,todolist,setList}) {
   )
 }
 
-export default React.memo(TodoLists)
+export default TodoLists
